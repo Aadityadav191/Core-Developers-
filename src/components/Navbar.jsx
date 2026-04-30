@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-// import Logo from "./../assets/Logo.jpeg";
 import { Moon, Sun } from "lucide-react";
 
 export default function Navbar() {
@@ -43,17 +42,18 @@ export default function Navbar() {
             >
               About
             </NavLink>
+
             <NavLink
-              to="/Contact"
+              to="/Services"
               className={({ isActive }) =>
                 `rounded-lg px-3 py-1 transition ${
                   isActive
                     ? "text-[#dc8e34] font-bold"
-                    : "text-[#ffffff] hover:text-[#dc8e34] "
+                    : "text-[#ffffff] hover:text-[#dc8e34]"
                 }`
               }
             >
-              Contact
+              Our Services
             </NavLink>
 
             <NavLink
@@ -70,7 +70,7 @@ export default function Navbar() {
             </NavLink>
 
             <NavLink
-              to="/PortfoTlio"
+              to="/team"
               className={({ isActive }) =>
                 `rounded-lg px-3 py-1 transition ${
                   isActive
@@ -79,21 +79,10 @@ export default function Navbar() {
                 }`
               }
             >
-              Portfolio
+              Our Team
             </NavLink>
 
-            <NavLink
-              to="/Services"
-              className={({ isActive }) =>
-                `rounded-lg px-3 py-1 transition ${
-                  isActive
-                    ? "text-[#dc8e34] font-bold"
-                    : "text-[#ffffff] hover:text-[#dc8e34]"
-                }`
-              }
-            >
-              Our Services
-            </NavLink>
+            
             <NavLink
               to="/Pricing"
               className={({ isActive }) =>
@@ -106,6 +95,20 @@ export default function Navbar() {
             >
               Pricing
             </NavLink>
+
+            <NavLink
+              to="/Contact"
+              className={({ isActive }) =>
+                `rounded-lg px-3 py-1 transition ${
+                  isActive
+                    ? "text-[#dc8e34] font-bold"
+                    : "text-[#ffffff] hover:text-[#dc8e34] "
+                }`
+              }
+            >
+              Contact
+            </NavLink>
+
             <NavLink
               to="/Career"
               className={({ isActive }) =>
@@ -183,19 +186,13 @@ export default function Navbar() {
             >
               About
             </NavLink>
+
             <NavLink
-              to="/Contact"
+              to="/Team"
               onClick={closeMenu}
               className="py-1.5 text-[#ffffff] hover:text-[#dc8e34] transition"
             >
-              Contact
-            </NavLink>
-            <NavLink
-              to="/Portfolio"
-              onClick={closeMenu}
-              className="py-1.5 text-[#ffffff] hover:text-[#dc8e34] transition"
-            >
-              Portfolio
+              Our Team
             </NavLink>
             <NavLink
               to="/Services"
@@ -211,6 +208,15 @@ export default function Navbar() {
             >
               Pricing
             </NavLink>
+
+            <NavLink
+              to="/Contact"
+              onClick={closeMenu}
+              className="py-1.5 text-[#ffffff] hover:text-[#dc8e34] transition"
+            >
+              Contact
+            </NavLink>
+
             <NavLink
               to="/Career"
               onClick={closeMenu}
@@ -227,7 +233,6 @@ export default function Navbar() {
                 Login / Register
               </button>
             </NavLink>
-            
           </div>
         </div>
       </div>

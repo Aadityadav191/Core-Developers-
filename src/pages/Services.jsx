@@ -103,7 +103,7 @@ const Services = () => {
               Book a Strategy Call
             </button>
             <button className="bg-white/5 border border-white/10 px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-all">
-              View Portfolio
+              View Team
             </button>
           </div>
         </motion.div>
