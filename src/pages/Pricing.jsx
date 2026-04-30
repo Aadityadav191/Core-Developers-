@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Check, Zap, Shield, Crown, Rocket, ArrowRight } from 'lucide-react';
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState('project'); // 'project' or 'service'
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   const websitePlans = [
     {

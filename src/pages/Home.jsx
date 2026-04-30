@@ -1,5 +1,4 @@
-// import React from 'react';
-import { motion } from 'framer-motion';
+import { useEffect } from "react";import { motion } from 'framer-motion';
 import { 
   Code2,  ChevronRight,Globe, ShieldCheck, Database, Smartphone 
 } from 'lucide-react';
@@ -18,6 +17,10 @@ const ScrollReveal = ({ children }) => (
 );
 
 const Home = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }

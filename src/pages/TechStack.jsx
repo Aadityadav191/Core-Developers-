@@ -1,4 +1,4 @@
-// import React from 'react';
+import { useEffect } from "react";
 import { motion } from 'framer-motion';
 import { 
   Database, 
@@ -10,6 +10,11 @@ import {
 } from 'lucide-react';
 
 const TechStack = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  
   const categories = [
     {
       title: "Frontend Development",

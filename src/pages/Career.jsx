@@ -1,4 +1,4 @@
-// import React from 'react';
+import { useEffect } from "react";
 import { motion } from 'framer-motion';
 import { 
   Briefcase, 
@@ -11,6 +11,11 @@ import {
 } from 'lucide-react';
 
 const Career = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+  
   const openRoles = [
     {
       title: "Senior Full-Stack Engineer",

@@ -1,8 +1,13 @@
-// import React from 'react';
+import { useEffect } from "react";
 import { motion } from 'framer-motion';
 import { MapPin, Send, MessageSquare, Globe } from 'lucide-react';
 
 const Contact = () => {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }

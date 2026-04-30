@@ -1,13 +1,13 @@
-// import React from 'react';
+import  { useEffect } from "react";
 import { motion } from 'framer-motion';
 import { ShieldCheck, Zap, Cpu } from 'lucide-react';
 import Testimonials from './../components/Testimonials';
 
 const About = () => {
-  const fadeIn = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
-  };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="bg-[#031c36] text-white py-20 px-8">

@@ -1,8 +1,14 @@
-// import React from 'react';
+import  {useEffect } from "react";
 import { motion } from 'framer-motion';
 import { Code2, Globe, Cpu, Rocket, Terminal, Layers } from 'lucide-react';
 
 export default function Team() {
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
+
+  
   const members = [
     {
       name: "Aadit Yadav ",
