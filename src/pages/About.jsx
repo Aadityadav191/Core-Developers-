@@ -1,7 +1,7 @@
 // import React from 'react';
 import { motion } from 'framer-motion';
 import { ShieldCheck, Zap, Cpu } from 'lucide-react';
-import Testimonials from '../components/testimonals';
+import Testimonials from './../components/Testimonials';
 
 const About = () => {
   const fadeIn = {
