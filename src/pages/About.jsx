@@ -1,7 +1,7 @@
 import  { useEffect } from "react";
 import { motion } from 'framer-motion';
 import { ShieldCheck, Zap, Cpu } from 'lucide-react';
-import Testimonials from './../components/Testimonials';
+import Testimonials from './../Components/Testimonials';
 
 const About = () => {
 
