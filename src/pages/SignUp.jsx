@@ -184,7 +184,7 @@ export default function Signup() {
             <div className="flex items-center gap-4 my-6">
               <div className="h-px bg-white/5 flex-1"></div>
               <span className="text-[10px] text-gray-600 font-bold uppercase tracking-widest">
-                OR 
+                
               </span>
               <div className="h-px bg-white/5 flex-1"></div>
             </div>
