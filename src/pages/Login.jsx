@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import { Mail, Lock, Eye, EyeOff, ArrowRight, Code } from "lucide-react";
+import { Mail, Lock, Eye, EyeOff, ArrowRight } from "lucide-react";
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -138,20 +138,30 @@ export default function Login() {
             </div>
 
             {/* Social Logins */}
-            <div className="grid grid-cols-2 gap-4">
-              <button
-                type="button"
-                className="w-full bg-white/5 border border-white/10 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-white/10 transition-all text-xs"
-              >
-                <Code size={16} /> GitHub
-              </button>
-              <button
-                type="button"
-                className="w-full bg-white/5 border border-white/10 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-3 hover:bg-white/10 transition-all text-xs"
-              >
-                {/* <Chrome size={16} /> Google */}
-              </button>
-            </div>
+            <section className=" text-center relative z-10">
+              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-md transition-all duration-300 hover:bg-white/[0.05] hover:border-white/10 group">
+                <NavLink
+                  to="/"
+                  className="flex items-center gap-1 text-[#ffffff] hover:text-[#de8f32] text-sm font-bold tracking-tight transition-colors"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="16"
+                    height="16"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="group-hover:-translate-x-1 transition-transform"
+                  >
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                  </svg>
+                  Return to Home
+                </NavLink>
+              </div>
+            </section>
           </form>
         </div>
       </motion.div>
