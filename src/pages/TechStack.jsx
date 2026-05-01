@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { IconCloud } from "./../Components/IconCloud/IconCloud.jsx";
+import { IconCloud } from "../Components/IconCloud/IconCloud.jsx";
 import {
   Server,
   Layout,
