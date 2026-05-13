@@ -32,7 +32,7 @@ const Career = () => {
     {
       title: "SEO Specialist",
       type: "Remote",
-      location: "Silicon Sector",
+      location: "Remote",
       stack: ["SEO Audits", "Content Strategy", "Google Analytics"]
     }
   ];
@@ -72,6 +72,7 @@ const Career = () => {
           </motion.h1>
           <p className="text-gray-400 text-xl max-w-2xl mx-auto">
             Build the future of digital infrastructure with a team of elite developers, designers, and visionaries.
+            Build the future of digital infrastructure with a team of elite developers, designers, and visionaries. At Core, we don't just build products—we build careers.
           </p>
         </div>
 
@@ -97,7 +98,7 @@ const Career = () => {
           <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
             <div>
               <h2 className="text-3xl font-bold mb-2">Open Positions</h2>
-              <p className="text-gray-400">Find your place in our high-performance ecosystem.</p>
+              <p className="text-gray-400">Find your place in our high-performance ecosystem. </p>
             </div>
             <div className="px-6 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-bold text-gray-400">
               {openRoles.length} Available Roles

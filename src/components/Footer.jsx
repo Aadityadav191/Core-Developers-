@@ -13,7 +13,6 @@ const Footer = () => {
   const brandDark = "#031c36";
   const brandBlue = "#015aae";
 
-
   const socialLinks = [
     {
       icon: <FaFacebookF />,
@@ -45,22 +44,55 @@ const Footer = () => {
       href: "https://www.linkedin.com/company/coredevelopers",
       label: "LinkedIn",
     },
-    
   ];
 
   const footerLinks = {
-    Company: ["About Us", "Our Team", "Careers", "News & Blog"],
+    Company: [
+      {
+        name: "About Us",
+        href: "/about",
+      },
+      {
+        name: "Services",
+        href: "/services",
+      },
+      {
+        name: "contact",
+        href: "/contact",
+      },
+      {
+        name: "Careers",
+        href: "/career",
+      },
+    ],
     Services: [
-      "Web Development",
-      "Mobile Apps",
-      "UI/UX Design",
-      "IT Consulting",
+      {
+        name: "Web Development",
+      },
+      {
+        name: "Mobile Apps",
+      },
+      {
+        name: "UI/UX Design",
+      },
+      {
+        name: "IT Consulting",
+      },
     ],
     Support: [
-      "Help Center",
-      "Contact Us",
-      "Privacy Policy",
-      "Terms of Service",
+      {
+        name: "Help Center",
+      },
+
+      {
+        name: "Contact Us",
+      },
+      {
+        name: "Privacy Policy",
+      },
+      {
+        name: "Terms of Service",
+      },
     ],
   };
 
@@ -124,11 +156,11 @@ const Footer = () => {
                   {links.map((link) => (
                     <li key={link}>
                       <Link
-                        to="#"
+                        to={link.href}
                         className="text-gray-500 text-sm hover:text-[#de8f32] transition-colors flex items-center group"
                       >
                         <span className="w-0 group-hover:w-2 h-[2px] bg-[#de8f32] mr-0 group-hover:mr-2 transition-all duration-300"></span>
-                        {link}
+                        {link.name}
                       </Link>
                     </li>
                   ))}
