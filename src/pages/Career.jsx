@@ -71,7 +71,6 @@ const Career = () => {
             Join the <span className="text-[#015aae]">Core</span> Team
           </motion.h1>
           <p className="text-gray-400 text-xl max-w-2xl mx-auto">
-            Build the future of digital infrastructure with a team of elite developers, designers, and visionaries.
             Build the future of digital infrastructure with a team of elite developers, designers, and visionaries. At Core, we don't just build products—we build careers.
           </p>
         </div>
