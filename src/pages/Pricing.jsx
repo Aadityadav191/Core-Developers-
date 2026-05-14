@@ -1,6 +1,7 @@
 import { useState,useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Check, Zap, Shield, Crown, Rocket, ArrowRight } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState('project'); // 'project' or 'service'
@@ -59,7 +60,11 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#031c36] text-white pt-20 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
+   <>
+   <Helmet>
+      <title>Core Developers - Pricing</title>
+    </Helmet>
+     <div className="min-h-screen bg-[#031c36] text-white pt-20 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
       {/* Background Accents */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[10%] left-[-5%] w-[40%] h-[40%] rounded-full bg-[#015aae] blur-[150px] opacity-10"></div>
@@ -163,6 +168,7 @@ const Pricing = () => {
         </div>
       </div>
     </div>
+   </>
   );
 };
 

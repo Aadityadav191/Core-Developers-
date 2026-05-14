@@ -3,6 +3,7 @@ import {
   Code2,  ChevronRight,Globe, ShieldCheck, Database, Smartphone 
 } from 'lucide-react';
 import Testimonials from "../components/Testimonials"; 
+import { Link } from "react-router-dom";
 
 // Animation Helper: Fades in content as you scroll
 const ScrollReveal = ({ children }) => (
@@ -124,9 +125,9 @@ const Home = () => {
             <p className="text-xl text-blue-100/70 mb-10 max-w-2xl mx-auto">
               Our consultation is free. Our strategy is priceless. Join the 50+ companies who have leveled up with us.
             </p>
-            <button className="bg-white text-[#031c36] px-12 py-5 rounded-full font-black text-lg hover:scale-110 transition-transform active:scale-95 shadow-2xl">
+            <Link to="/contact" className="bg-white text-[#031c36] px-12 py-5 rounded-full font-black text-lg hover:scale-110 transition-transform active:scale-95 shadow-2xl">
               GET IN TOUCH
-            </button>
+            </Link>
           </div>
         </ScrollReveal>
       </section>

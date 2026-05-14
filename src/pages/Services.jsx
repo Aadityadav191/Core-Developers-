@@ -8,6 +8,7 @@ import {
   Layers, 
   Database
 } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 const Services = () => {
 
@@ -21,7 +22,11 @@ useEffect(() => {
   };
 
   return (
-    <div className="min-h-screen bg-[#031c36] text-white pt-32 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
+   <>
+   <Helmet>
+      <title>Core Developers - Services</title>
+    </Helmet>
+     <div className="min-h-screen bg-[#031c36] text-white pt-32 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
       {/* Dynamic Background Glows */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[5%] left-[10%] w-[35%] h-[35%] rounded-full bg-[#015aae] blur-[120px] opacity-20"></div>
@@ -114,6 +119,7 @@ useEffect(() => {
         </motion.div>
       </div>
     </div>
+   </>
   );
 };
 

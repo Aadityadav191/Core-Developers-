@@ -2,11 +2,16 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { Mail, Lock, Eye, EyeOff, ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet";
 export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#031c36] flex items-center justify-center p-6 selection:bg-[#de8f32] selection:text-[#031c36]">
+   <>
+   <Helmet>
+      <title>Core Developers - Login</title>
+    </Helmet>
+     <div className="min-h-screen bg-[#031c36] flex items-center justify-center p-6 selection:bg-[#de8f32] selection:text-[#031c36]">
       {/* Background Decorative Glows */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#015aae] blur-[120px] opacity-20"></div>
@@ -166,5 +171,6 @@ export default function Login() {
         </div>
       </motion.div>
     </div>
+   </>
   );
 }

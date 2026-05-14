@@ -1,6 +1,7 @@
 import  {useEffect } from "react";
 import { motion } from 'framer-motion';
 import { Code2, Globe, Cpu, Rocket, Terminal, Layers } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 export default function Team() {
 
@@ -41,7 +42,12 @@ export default function Team() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#031c36] text-white pt-20 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36] overflow-x-hidden">
+    <>
+    <Helmet>  
+      <title>Core Developers - Team</title>
+      <meta name="description" content="Meet the core team of engineers and designers behind Core Developers. Learn about their expertise in scalable systems, React ecosystems, UI/UX design, and DevOps automation." />
+    </Helmet>
+      <div className="min-h-screen bg-[#031c36] text-white pt-20 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36] overflow-x-hidden">
       
       {/* Background Ambience */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
@@ -211,5 +217,6 @@ export default function Team() {
 
       </div>
     </div>
+    </>
   );
 }

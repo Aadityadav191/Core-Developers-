@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { motion } from 'framer-motion';
 import { MapPin, Send, MessageSquare, Globe } from 'lucide-react';
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
 
@@ -14,7 +15,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#031c36] text-white pt-32 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
+   <>
+    <Helmet>
+      <title>Core Developers - Contact</title>
+    </Helmet>
+     <div className="min-h-screen bg-[#031c36] text-white pt-32 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
       {/* Background Accents */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[10%] right-[-5%] w-[30%] h-[30%] rounded-full bg-[#015aae] blur-[120px] opacity-20"></div>
@@ -117,6 +122,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+   </>
   );
 };
 

@@ -10,12 +10,17 @@ import {
   ArrowRight,
   ShieldCheck,
 } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 export default function Signup() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#031c36] flex items-center justify-center p-6 selection:bg-[#de8f32] selection:text-[#031c36]">
+   <>
+   <Helmet>
+      <title>Core Developers - Sign Up</title>
+    </Helmet>
+     <div className="min-h-screen bg-[#031c36] flex items-center justify-center p-6 selection:bg-[#de8f32] selection:text-[#031c36]">
       {/* Background Decorative Glows */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-[#015aae] blur-[120px] opacity-20"></div>
@@ -218,5 +223,6 @@ export default function Signup() {
         </div>
       </motion.div>
     </div>
+   </>
   );
 }
