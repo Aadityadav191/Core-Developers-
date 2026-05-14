@@ -18,6 +18,9 @@ const Contact = () => {
    <>
     <Helmet>
       <title>Core Developers - Contact</title>
+      <meta name="description" content="Get in touch with Core Developers for your web development needs. Contact us for inquiries, project discussions, and support." />
+      <meta name="keywords" content="Core Developers, Contact, Web Development, Inquiries, Support" />
+      <meta name="author" content="Core Developers Team" />
     </Helmet>
      <div className="min-h-screen bg-[#031c36] text-white pt-32 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
       {/* Background Accents */}

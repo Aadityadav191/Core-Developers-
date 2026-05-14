@@ -79,6 +79,7 @@ const Career = () => {
     <>
     <Helmet>
             <title>Core Developers - Career</title>
+            <meta name="description" content="Join the Core Team and build the future of digital infrastructure with a team of elite developers, designers, and visionaries." />
           </Helmet>
       <div className="min-h-screen bg-[#031c36] text-white pt-20 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
         {/* Background Decorative Elements */}
