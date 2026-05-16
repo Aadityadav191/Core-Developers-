@@ -16,28 +16,28 @@ export default function Team() {
       role: "Software Engineer & Founder",
       bio: "Visionary behind the Core infrastructure. Expert in scalable systems and cloud-native solutions.",
       image: "https://lh3.googleusercontent.com/a/ACg8ocKAsPdf8uU2GJLzS8eMWidJR4tpzM2XS-8-EJT9pHF0DG6d8euh=s576-c-no",
-      social: { github: "#", linkedin: "#", twitter: "#" }
+      social: {   linkedin: "#", twitter: "#" }
     },
     {
       name: "Dipak Raj Sharma ",
       role: "Head of Engineering & Co-Founder",
       bio: "Polyglot developer specializing in React ecosystems and performance optimization.",
       image: "https://media.licdn.com/dms/image/v2/D4D03AQGUyMT3VSrovA/profile-displayphoto-shrink_800_800/B4DZiA4ht3G8Ac-/0/1754508959469?e=1779321600&v=beta&t=9d0AuaEBQGpCfSDPAKOf9Vf_FI6JR0uoclHYZo5Jwgk",
-      social: { github: "#", linkedin: "#", twitter: "#" }
+      social: {   linkedin: "#", twitter: "#" }
     },
     {
       name: "Avash Chaudhari",
-      role: "Senior UI/UX Designer",
+      role: "Managing Director & Lead Designer",
       bio: "Crafting digital experiences that balance technical complexity with intuitive simplicity.",
-      image: "https://i.pravatar.cc/150?u=david",
-      social: { github: "#", linkedin: "#", twitter: "#" }
+      image: "https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/465916898_1515843132381649_3951497750107656679_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=N4bJ1N_iDuAQ7kNvwHlHQWi&_nc_oc=AdreDDv2hrPPXAsfr3fAgJDafnjfBDgdtcbFWxlJIlATAO3HTxiDBo47KkHHthHl2z7qhxuuSaDpeSAnDjHiY2lk&_nc_zt=23&_nc_ht=scontent.fktm17-1.fna&_nc_gid=xrGOVupHkHo8BpW9OmzFNw&_nc_ss=7b2a8&oh=00_Af64id34mwgOQom2DQAOqfTpuVqb70-vgQSrruGZWPYrHA&oe=6A0E37EB",
+      social: {   linkedin: "#", twitter: "#" }
     },
     {
       name: "Sarah Jenkins",
       role: "DevOps Specialist",
       bio: "Automating the future. Master of Kubernetes, Docker, and CI/CD pipelines.",
       image: "https://i.pravatar.cc/150?u=sarahj",
-      social: { github: "#", linkedin: "#", twitter: "#" }
+      social: {   linkedin: "#", twitter: "#" }
     }
   ];
 
@@ -119,7 +119,6 @@ export default function Team() {
                   </p>
 
                   <div className="flex gap-4 pt-5 border-t border-white/10">
-                    <a href={member.social.github} className="text-gray-500 hover:text-white transition-all transform hover:-translate-y-1">Github</a>
                     <a href={member.social.linkedin} className="text-gray-500 hover:text-[#015aae] transition-all transform hover:-translate-y-1">LinkedIn</a>
                     <a href={member.social.twitter} className="text-gray-500 hover:text-[#de8f32] transition-all transform hover:-translate-y-1">Twitter</a>
                   </div>
