@@ -4,11 +4,11 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: "Aadit Yadav ",
-    role: "Software Engineer at Zeenopay Nepal",
-    content: "Core Developers transformed our legacy system into a high-speed cloud powerhouse. Their attention to detail in the 'Core' architecture is unmatched.",
+    name: "Aayush Yadav ",
+    role: "Geomatics Engineer ",
+    content: "Core's expertise in React and cybersecurity transformed our digital presence. The website they built for us is not only visually stunning but also incredibly secure, giving our users peace of mind.",
     stars: 5,
-    image: "https://lh3.googleusercontent.com/a/ACg8ocKAsPdf8uU2GJLzS8eMWidJR4tpzM2XS-8-EJT9pHF0DG6d8euh=s576-c-no"
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEEsVOGpUvEaA/profile-displayphoto-crop_800_800/B56Zsk55_JJoAI-/0/1765850720266?e=1780531200&v=beta&t=LtbTdQv6Q46OeWCKaJtsH1vwhjarXIgnRV6u_dwtiTc"
   },
   {
     name: "Dipak Shrestha",
