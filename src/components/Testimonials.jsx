@@ -22,7 +22,7 @@ const testimonials = [
     role: "Sales Officer at DishHome",
     content: "Fast, reliable, and technically superior. They are our go-to partners for complex React integrations and cybersecurity audits.",
     stars: 5,
-    image: "https://media.licdn.com/dms/image/v2/D4E03AQGI3bEt1kMnew/profile-displayphoto-shrink_800_800/B4EZRPY9ndHEAc-/0/1736498732486?e=1779321600&v=beta&t=4dkWc_MjWXqbSaeixTjQAq_Kpo0o6UcTdav5KKECUwA"
+    image: "https://media.licdn.com/dms/image/v2/D4E03AQGI3bEt1kMnew/profile-displayphoto-shrink_800_800/B4EZRPY9ndHEAc-/0/1736498732486?e=1781136000&v=beta&t=O3zdMQpzt7xSqLGip1iilF-YwX9GcTYKvfzIJ-hzKBw"
   },
   
 ];
