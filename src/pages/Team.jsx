@@ -2,6 +2,9 @@ import  {useEffect } from "react";
 import { motion } from 'framer-motion';
 import { Code2, Globe, Cpu, Rocket, Terminal, Layers } from 'lucide-react';
 import { Helmet } from "react-helmet";
+import { FaGithub ,FaLinkedin,FaTwitter,FaFacebook} from "react-icons/fa";
+import { Link } from "react-router-dom";
+
 
 export default function Team() {
 
@@ -16,28 +19,28 @@ export default function Team() {
       role: "Software Engineer & Founder",
       bio: "Visionary behind the Core infrastructure. Expert in scalable systems and cloud-native solutions.",
       image: "https://lh3.googleusercontent.com/a/ACg8ocKAsPdf8uU2GJLzS8eMWidJR4tpzM2XS-8-EJT9pHF0DG6d8euh=s576-c-no",
-      social: {   linkedin: "#", twitter: "#" }
+      social: {   linkedin: "https://www.linkedin.com/in/aadit-yadav-b17636258/", twitter: "https://twitter.com/aadityadav", github: "https://github.com/aadityadav191", facebook: "https://www.facebook.com/aadityadav" }
     },
     {
       name: "Dipak Raj Sharma ",
       role: "Head of Engineering & Co-Founder",
       bio: "Polyglot developer specializing in React ecosystems and performance optimization.",
-      image: "https://media.licdn.com/dms/image/v2/D4D03AQGUyMT3VSrovA/profile-displayphoto-shrink_800_800/B4DZiA4ht3G8Ac-/0/1754508959469?e=1779321600&v=beta&t=9d0AuaEBQGpCfSDPAKOf9Vf_FI6JR0uoclHYZo5Jwgk",
-      social: {   linkedin: "#", twitter: "#" }
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQGUyMT3VSrovA/profile-displayphoto-shrink_800_800/B4DZiA4ht3G8Ac-/0/1754508959469?e=1781136000&v=beta&t=aOuOkUo7OjyxHDuD5QN8d6p4XxtawD1ORZNwaNNuSHQ",
+      social: {   linkedin: "https://www.linkedin.com/in/dipak-sharma-0293961b1/", twitter: "https://twitter.com/dipakrajsharma", github: "https://github.com/dipakrajsharma", facebook: "https://www.facebook.com/dipakrajsharma" }
     },
     {
       name: "Avash Chaudhari",
       role: "Managing Director & Lead Designer",
       bio: "Crafting digital experiences that balance technical complexity with intuitive simplicity.",
-      image: "https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/465916898_1515843132381649_3951497750107656679_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=N4bJ1N_iDuAQ7kNvwHlHQWi&_nc_oc=AdreDDv2hrPPXAsfr3fAgJDafnjfBDgdtcbFWxlJIlATAO3HTxiDBo47KkHHthHl2z7qhxuuSaDpeSAnDjHiY2lk&_nc_zt=23&_nc_ht=scontent.fktm17-1.fna&_nc_gid=xrGOVupHkHo8BpW9OmzFNw&_nc_ss=7b2a8&oh=00_Af64id34mwgOQom2DQAOqfTpuVqb70-vgQSrruGZWPYrHA&oe=6A0E37EB",
-      social: {   linkedin: "#", twitter: "#" }
+      image: "https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/465916898_1515843132381649_3951497750107656679_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEkXYw1H-ZiFbT3JJXcEX468LzR2WkkaPbwvNHZaSRo9rUE8y5zwN2EQOQOtbuOpa33MIF3u8GpKnrYYVOTXvaY&_nc_ohc=zMbUZ-2HQNMQ7kNvwHlA6_b&_nc_oc=AdrslyM3rAjt3VejmIOev3KZ94l4wTXApYwwMmK42QaP6PW9_yAaS2RPeNG-lHmA004qhFKQ6ioMh62wjsKmEwTC&_nc_zt=23&_nc_ht=scontent.fktm7-1.fna&_nc_gid=FqyTbmk7BX5Ow_SKULHm8A&_nc_ss=7b2a8&oh=00_Af6-ZR7kMO0cEUAg9GW_IGHK9w5ttqL-YcDv5J4_CygO3A&oe=6A14972B",
+      social: {   linkedin: "https://www.linkedin.com/in/avash-chaudhari-5b3b3b258/", twitter: "https://twitter.com/avashchaudhari", github: "https://github.com/avashchaudhari", facebook: "https://www.facebook.com/avashchaudhari" }
     },
     {
       name: "Sarah Jenkins",
       role: "DevOps Specialist",
       bio: "Automating the future. Master of Kubernetes, Docker, and CI/CD pipelines.",
       image: "https://i.pravatar.cc/150?u=sarahj",
-      social: {   linkedin: "#", twitter: "#" }
+      social: {   linkedin: "https://www.linkedin.com/in/sarah-jenkins-5b3b3b258/", twitter: "https://twitter.com/sarahj", github: "https://github.com/sarahj", facebook: "https://www.facebook.com/sarahj" }
     }
   ];
 
@@ -119,8 +122,10 @@ export default function Team() {
                   </p>
 
                   <div className="flex gap-4 pt-5 border-t border-white/10">
-                    <a href={member.social.linkedin} className="text-gray-500 hover:text-[#015aae] transition-all transform hover:-translate-y-1">LinkedIn</a>
-                    <a href={member.social.twitter} className="text-gray-500 hover:text-[#de8f32] transition-all transform hover:-translate-y-1">Twitter</a>
+                    <a href={member.social.linkedin} className="text-gray-500 hover:text-[#015aae] transition-all transform hover:-translate-y-1"><FaLinkedin /></a>
+                    <a href={member.social.twitter} className="text-gray-500 hover:text-[#de8f32] transition-all transform hover:-translate-y-1"><FaTwitter /></a>
+                    <a href={member.social.github} className="text-gray-500 hover:text-[#de8f32] transition-all transform hover:-translate-y-1"><FaGithub /></a>
+                    <a href={member.social.facebook} className="text-gray-500 hover:text-[#de8f32] transition-all transform hover:-translate-y-1"><FaFacebook /></a>
                   </div>
                 </div>
               </div>
@@ -208,9 +213,9 @@ export default function Team() {
             <p className="text-gray-400 max-w-xl mx-auto mb-10">
               We’re always looking for obsessed engineers and pixel-perfect designers. If you live and breathe code, we want to hear from you.
             </p>
-            <button className="px-10 py-4 bg-white text-[#031c36] font-black rounded-2xl hover:bg-[#de8f32] transition-all duration-300 hover:scale-105">
+            <Link to="/career" className="px-10 py-4 bg-white text-[#031c36] font-black rounded-2xl hover:bg-[#de8f32] transition-all duration-300 hover:scale-105">
               VIEW OPEN ROLES
-            </button>
+            </Link>
           </div>
         </div>
 

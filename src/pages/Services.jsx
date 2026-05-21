@@ -9,6 +9,7 @@ import {
   Database
 } from 'lucide-react';
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Services = () => {
 
@@ -109,12 +110,12 @@ useEffect(() => {
             Our architects are ready to discuss your specific technical requirements. Let’s build something extraordinary together.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-[#de8f32] text-[#031c36] px-10 py-4 rounded-full font-black hover:scale-105 transition-all">
+            <Link to="/contact" className="bg-[#de8f32] text-[#031c36] px-10 py-4 rounded-full font-black hover:scale-105 transition-all">
               Book a Strategy Call
-            </button>
-            <button className="bg-white/5 border border-white/10 px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-all">
+            </Link>
+            <Link to="/team" className="bg-white/5 border border-white/10 px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-all">
               View Team
-            </button>
+            </Link>
           </div>
         </motion.div>
       </div>

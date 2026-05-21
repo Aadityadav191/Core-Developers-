@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ShieldCheck, Zap, Cpu } from "lucide-react";
 import Testimonials from "../components/Testimonials";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 const About = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -121,9 +122,9 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6">
               Ready to see the "Core" difference?
             </h2>
-            <button className="bg-[#de8f32] text-[#031c36] px-10 py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(222,143,50,0.4)] transition-all">
+            <Link to="/team" className="bg-[#de8f32] text-[#031c36] px-10 py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(222,143,50,0.4)] transition-all">
               Meet the Team
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>
