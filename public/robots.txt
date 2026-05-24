@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://coredevelopers.com/sitemap.xml
