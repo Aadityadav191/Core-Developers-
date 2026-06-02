@@ -177,7 +177,10 @@ export default function Signup() {
             </div>
 
             {/* Submit Button */}
-            <button className="group w-full bg-[#de8f32] text-[#031c36] font-black py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-[#c97d28] transition-all transform active:scale-95 shadow-xl shadow-[#de8f32]/10 mt-2">
+            <button  onClick={(e) => {
+              e.preventDefault();
+              alert("Account initialization is currently unavailable. Backend is not ready.");
+            }} className="group w-full bg-[#de8f32] text-[#031c36] font-black py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-[#c97d28] transition-all transform active:scale-95 shadow-xl shadow-[#de8f32]/10 mt-2 cursor-not-allowed">
               INITIALIZE ACCOUNT
               <ArrowRight
                 size={18}

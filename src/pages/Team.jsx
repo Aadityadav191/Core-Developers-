@@ -4,6 +4,7 @@ import { Code2, Globe, Cpu, Rocket, Terminal, Layers } from 'lucide-react';
 import { Helmet } from "react-helmet";
 import { FaGithub ,FaLinkedin,FaTwitter,FaFacebook} from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Aadityadav from "../assets/Aadityadav.jpeg";
 
 
 export default function Team() {
@@ -18,7 +19,7 @@ export default function Team() {
       name: "Aadit Yadav ",
       role: "Software Engineer & Founder",
       bio: "Visionary behind the Core infrastructure. Expert in scalable systems and cloud-native solutions.",
-      image: "https://lh3.googleusercontent.com/a/ACg8ocKAsPdf8uU2GJLzS8eMWidJR4tpzM2XS-8-EJT9pHF0DG6d8euh=s576-c-no",
+      image: Aadityadav,
       social: {   linkedin: "https://www.linkedin.com/in/aadit-yadav-b17636258/", twitter: "https://twitter.com/aadityadav", github: "https://github.com/aadityadav191", facebook: "https://www.facebook.com/aadityadav" }
     },
     {
