@@ -1,13 +1,42 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from 'framer-motion';
 import { MapPin, Send, MessageSquare, Globe } from 'lucide-react';
 import { Helmet } from "react-helmet";
+import emailjs from '@emailjs/browser'; // 1. Imported EmailJS
 
 const Contact = () => {
+  const formRef = useRef(); // 2. Created a reference to the form
+  const [isSending, setIsSending] = useState(false); // State to handle loading text
+  const [status, setStatus] = useState({ type: "", message: "" }); // State for success/error alerts
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+
+  // 3. Email Submission Logic
+  const handleSendEmail = (e) => {
+    e.preventDefault();
+    setIsSending(true);
+    setStatus({ type: "", message: "" });
+
+    // IMPORTANT: Change these values to your real credentials
+    const SERVICE_ID = "service_iev9lwe";
+    const TEMPLATE_ID = "template_yi2ntsj";
+    const PUBLIC_KEY = "k-9vzVnYe8dohFdMS";
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+      .then(() => {
+        setStatus({ type: "success", message: "Message sent successfully! We'll reply soon." });
+        formRef.current.reset(); // Clears form inputs on success
+      })
+      .catch((error) => {
+        setStatus({ type: "error", message: "Something went wrong. Please try again." });
+        console.error("EmailJS Error details:", error);
+      })
+      .finally(() => {
+        setIsSending(false);
+      });
+  };
 
   const fadeInUp = {
     hidden: { opacity: 0, y: 30 },
@@ -53,32 +82,50 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="lg:col-span-2 bg-white/5 backdrop-blur-xl border border-white/10 p-8 md:p-12 rounded-[2.5rem] shadow-2xl"
           >
-            <form className="grid md:grid-cols-2 gap-8">
+            {/* 4. Added form Ref, onSubmit handler */}
+            <form ref={formRef} onSubmit={handleSendEmail} className="grid md:grid-cols-2 gap-8">
+              
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-[#015aae]">Full Name</label>
-                <input type="text" placeholder="Your Name " className="w-full bg-[#031c36]/50 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-[#de8f32] transition-all" />
+                {/* 5. Added required and name attribute */}
+                <input required name="user_name" type="text" placeholder="Your Name " className="w-full bg-[#031c36]/50 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-[#de8f32] transition-all" />
               </div>
+
               <div className="space-y-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-[#015aae]">Email Address</label>
-                <input type="email" placeholder="your.email@company.com" className="w-full bg-[#031c36]/50 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-[#de8f32] transition-all" />
+                {/* 5. Added required and name attribute */}
+                <input required name="user_email" type="email" placeholder="your.email@company.com" className="w-full bg-[#031c36]/50 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-[#de8f32] transition-all" />
               </div>
+
               <div className="space-y-2 md:col-span-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-[#015aae]">Subject</label>
-                <select className="w-full bg-[#031c36]/50 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-[#de8f32] transition-all appearance-none">
-                  <option>Web Development</option>
-                  <option>Mobile App Development</option>
-                  <option>Cloud Services</option>
-                  <option>General Inquiry</option>
+                {/* 5. Added name attribute and explicit values */}
+                <select name="subject" className="w-full bg-[#031c36]/50 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-[#de8f32] transition-all appearance-none">
+                  <option value="Web Development">Web Development</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                  <option value="Cloud Services">Cloud Services</option>
+                  <option value="General Inquiry">General Inquiry</option>
                 </select>
               </div>
+
               <div className="space-y-2 md:col-span-2">
                 <label className="text-xs font-bold uppercase tracking-widest text-[#015aae]">Message</label>
-                <textarea rows="5" placeholder="Tell us about your project..." className="w-full bg-[#031c36]/50 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-[#de8f32] transition-all resize-none"></textarea>
+                {/* 5. Added required and name attribute */}
+                <textarea required name="message" rows="5" placeholder="Tell us about your project..." className="w-full bg-[#031c36]/50 border border-white/10 rounded-xl px-5 py-4 focus:outline-none focus:border-[#de8f32] transition-all resize-none"></textarea>
               </div>
+
+              {/* 6. Success/Error Toast Message display */}
+              {status.message && (
+                <div className={`md:col-span-2 p-4 rounded-xl text-sm border ${status.type === "success" ? "bg-green-500/10 text-green-400 border-green-500/20" : "bg-red-500/10 text-red-400 border-red-500/20"}`}>
+                  {status.message}
+                </div>
+              )}
+
               <div className="md:col-span-2">
-                <button className="group w-full md:w-auto bg-[#de8f32] text-[#031c36] font-black px-12 py-5 rounded-full flex items-center justify-center gap-3 hover:scale-105 transition-all shadow-xl shadow-[#de8f32]/20">
-                  SEND MESSAGE
-                  <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                {/* 7. Added disabled state and loader switch for UX */}
+                <button type="submit" disabled={isSending} className="group w-full md:w-auto bg-[#de8f32] text-[#031c36] font-black px-12 py-5 rounded-full flex items-center justify-center gap-3 hover:scale-105 transition-all shadow-xl shadow-[#de8f32]/20 disabled:opacity-50 disabled:scale-100">
+                  {isSending ? "SENDING..." : "SEND MESSAGE"}
+                  {!isSending && <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
                 </button>
               </div>
             </form>
