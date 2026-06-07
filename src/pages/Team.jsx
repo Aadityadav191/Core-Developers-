@@ -4,8 +4,10 @@ import { Code2, Globe, Cpu, Rocket, Terminal, Layers } from 'lucide-react';
 import { Helmet } from "react-helmet";
 import { FaGithub ,FaLinkedin,FaTwitter,FaFacebook} from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Aadityadav from "../assets/Aadityadav.jpeg";
-
+import Team1 from '../assets/team1.jpeg';
+import Team2 from '../assets/team2.jpeg';
+// import Team3 from '../assets/team3.jpg';
+// import Team4 from '../assets/team4.jpg';
 
 export default function Team() {
 
@@ -19,14 +21,14 @@ export default function Team() {
       name: "Aadit Yadav ",
       role: "Software Engineer & Founder",
       bio: "Visionary behind the Core infrastructure. Expert in scalable systems and cloud-native solutions.",
-      image: Aadityadav,
+      image: Team1,
       social: {   linkedin: "https://www.linkedin.com/in/aadit-yadav-b17636258/", twitter: "https://twitter.com/aadityadav", github: "https://github.com/aadityadav191", facebook: "https://www.facebook.com/aadityadav" }
     },
     {
       name: "Dipak Raj Sharma ",
       role: "Head of Engineering & Co-Founder",
       bio: "Polyglot developer specializing in React ecosystems and performance optimization.",
-      image: "https://media.licdn.com/dms/image/v2/D4D03AQGUyMT3VSrovA/profile-displayphoto-shrink_800_800/B4DZiA4ht3G8Ac-/0/1754508959469?e=1781136000&v=beta&t=aOuOkUo7OjyxHDuD5QN8d6p4XxtawD1ORZNwaNNuSHQ",
+      image: Team2,
       social: {   linkedin: "https://www.linkedin.com/in/dipak-sharma-0293961b1/", twitter: "https://twitter.com/dipakrajsharma", github: "https://github.com/dipakrajsharma", facebook: "https://www.facebook.com/dipakrajsharma" }
     },
     {
