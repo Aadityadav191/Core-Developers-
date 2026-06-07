@@ -4,10 +4,10 @@ import { Code2, Globe, Cpu, Rocket, Terminal, Layers } from 'lucide-react';
 import { Helmet } from "react-helmet";
 import { FaGithub ,FaLinkedin,FaTwitter,FaFacebook} from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Team1 from '../assets/team1.jpeg';
-import Team2 from '../assets/team2.jpeg';
-// import Team3 from '../assets/team3.jpg';
-// import Team4 from '../assets/team4.jpg';
+import Team1 from '../assets/Team1.jpeg';
+import Team2 from '../assets/Team2.jpeg';
+// import Team3 from '../assets/Team3.jpeg';
+// import Team4 from '../assets/Team4.jpeg';
 
 export default function Team() {
   useEffect(() => {
