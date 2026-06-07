@@ -1,9 +1,9 @@
 // import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
-import Client1 from '../assets/client1.jpg';
-import Client2 from '../assets/client2.jpg';
-import Client3 from '../assets/client3.jpeg';
+import Client1 from '../assets/Client1.jpg';
+import Client2 from '../assets/Client2.jpg';
+import Client3 from '../assets/Client3.jpeg';
 
 
 const testimonials = [
