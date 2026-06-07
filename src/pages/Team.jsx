@@ -10,7 +10,6 @@ import Team2 from '../assets/team2.jpeg';
 // import Team4 from '../assets/team4.jpg';
 
 export default function Team() {
-
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
@@ -19,7 +18,7 @@ export default function Team() {
   const members = [
     {
       name: "Aadit Yadav ",
-      role: "Software Engineer & Founder",
+      role: "Software Engineer & Co-Founder",
       bio: "Visionary behind the Core infrastructure. Expert in scalable systems and cloud-native solutions.",
       image: Team1,
       social: {   linkedin: "https://www.linkedin.com/in/aadit-yadav-b17636258/", twitter: "https://twitter.com/aadityadav", github: "https://github.com/aadityadav191", facebook: "https://www.facebook.com/aadityadav" }

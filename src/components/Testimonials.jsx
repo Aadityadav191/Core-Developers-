@@ -10,21 +10,21 @@ const testimonials = [
   {
     name: "Sujan Raut",
     role: "co-founder of  ad builders",
-    content: "Core's expertise in React and cybersecurity transformed our digital presence. The website they built for us is not only visually stunning but also incredibly secure, giving our users peace of mind.",
+    content: "The website they developed for us is a masterpiece of modern web design. It’s fast, responsive, and has a sleek UI that our users love. The team’s attention to detail and commitment to quality is evident in every pixel.",
     stars: 5,
     image: Client1
   },
   {
     name: "Giriza prashad lamsal",
     role: "Product Manager at Visionary",
-    content: "The mobile app they built for us saw a 40% increase in user engagement within the first month. Clean code and beautiful UI.",
+    content: "Core Developers transformed our online presence with a stunning, user-friendly website. Their expertise in React and Next.js resulted in a fast, responsive site that perfectly captures our brand’s essence. We couldn’t be happier with the results!",
     stars: 5,
     image: Client2
   },
   {
     name: "Rahul Prashad Gupta",
     role: "Sales Officer at DishHome",
-    content: "Fast, reliable, and technically superior. They are our go-to partners for complex React integrations and cybersecurity audits.",
+    content: "Working with Core Developers was a game-changer for our business. They built us a sleek, modern website that’s not only visually stunning but also incredibly fast and responsive. Their professionalism and expertise made the entire process seamless. Highly recommend!",
     stars: 5,
     image: Client3
   },
