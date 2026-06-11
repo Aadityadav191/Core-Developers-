@@ -9,8 +9,8 @@ import Services from "../pages/Services";
 import Team from "../pages/Team";
 import TechStack from "../pages/TechStack";
 import Contact from "../pages/Contact";
-import Login from "../pages/Login";
-import SignUp from "../pages/SignUp";
+import Login from "../pages/auth/Login";
+import SignUp from "../pages/auth/SignUp";
 import Career from "../pages/Career";
 import Pricing from "../pages/Pricing";
 export default function AppRouter() {

@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import AppShowcase from "../Components/AppShowcase"
 
 const Services = () => {
 
@@ -96,6 +97,13 @@ useEffect(() => {
             accent="#de8f32"
           />
         </div>
+        
+
+
+<AppShowcase/>
+
+
+
 
         {/* Bottom CTA / Workflow Preview */}
         <motion.div 
