@@ -63,7 +63,7 @@ export default function Team() {
       <div className="relative z-10 max-w-7xl mx-auto">
         
         {/* Header */}
-        <div className="text-center mb-24">
+        <div className="text-center mb-15">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
