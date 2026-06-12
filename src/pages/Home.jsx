@@ -8,7 +8,7 @@ import {
   Terminal,
   Cpu,
 } from "lucide-react";
-import Testimonials from "../components/Testimonials";
+import Testimonials from "../Components/Testimonials";
 import { Link } from "react-router-dom";
 import ProductShowcase from "../Components/ProductShowcase";
 
