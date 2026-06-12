@@ -56,8 +56,8 @@ export default function Team() {
       
       {/* Background Ambience */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-        <div className="absolute top-[10%] left-[-5%] w-[500px] h-[500px] rounded-full bg-[#015aae] blur-[120px] opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-[10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-[#de8f32] blur-[120px] opacity-15"></div>
+        <div className="absolute top-[10%] left-[-5%] w-125 h-125 rounded-full bg-[#015aae] blur-[120px] opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-[10%] right-[-5%] w-125 h-125 rounded-full bg-[#de8f32] blur-[120px] opacity-15"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
@@ -104,7 +104,7 @@ export default function Team() {
                   <img 
                     src={member.image} 
                     alt={member.name} 
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700 ease-out" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700 ease-out" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#031c36] via-transparent to-transparent opacity-40"></div>
                 </div>

@@ -76,7 +76,7 @@ const ProductShowcase = () => {
         </div>
 
         {/* --- RIGHT COLUMN: LAYERED HARDWARE OVERFLOW MOCKUPS --- */}
-        <div className="lg:col-span-7 flex items-center justify-center relative min-h-[500px] md:min-h-[600px] w-full mt-10 lg:mt-0">
+        <div className="lg:col-span-7 flex items-center justify-center relative min-h-125 md:min-h-150 w-full mt-10 lg:mt-0">
           
           {/* Base Decorative Tech Halo */}
           <div className="absolute w-[80%] h-[80%] border border-white/5 rounded-full animate-[spin_100s_linear_infinite] pointer-events-none"></div>
@@ -94,7 +94,7 @@ const ProductShowcase = () => {
             <img 
               src={WebAppShow1} 
               alt="Core Developers Application Frontend interface view" 
-              className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105"
+              className="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105 "
             />
           </motion.div>
 
@@ -110,7 +110,7 @@ const ProductShowcase = () => {
             <img 
               src={WebAppShow2} 
               alt="Core Developers alternative app layout profile perspective view" 
-              className="w-full h-auto object-cover"
+              className="w-full h-auto object-cover animate-bounce-slow"
             />
           </motion.div>
           
