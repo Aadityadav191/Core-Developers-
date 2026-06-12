@@ -10,7 +10,7 @@ import {
   ArrowUpRight,
   Code2,
 } from "lucide-react";
-import CareerForm from '../Components/CareerForm';
+import CareerForm from '../components/CareerForm';
 
 const Career = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

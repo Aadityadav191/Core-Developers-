@@ -8,9 +8,9 @@ import {
   Terminal,
   Cpu,
 } from "lucide-react";
-import Testimonials from "../Components/Testimonials";
+import Testimonials from "../components/Testimonials";
 import { Link } from "react-router-dom";
-import ProductShowcase from "../Components/ProductShowcase";
+import ProductShowcase from "../components/ProductShowcase";
 
 // Animation Helper: Fades in content as you scroll
 const ScrollReveal = ({ children }) => (
