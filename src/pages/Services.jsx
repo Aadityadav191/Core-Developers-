@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import AppShowcase from "../Components/AppShowcase"
+import ProductShowcase from "../Components/ProductShowcase"
 
 const Services = () => {
 
@@ -100,7 +100,7 @@ useEffect(() => {
         
 
 
-<AppShowcase/>
+<ProductShowcase/>
 
 
 

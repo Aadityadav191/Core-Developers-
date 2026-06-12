@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import Testimonials from "../components/Testimonials";
 import { Link } from "react-router-dom";
-import AppShowcase from "../Components/AppShowcase";
+import ProductShowcase from "../Components/ProductShowcase";
 
 // Animation Helper: Fades in content as you scroll
 const ScrollReveal = ({ children }) => (
@@ -234,7 +234,7 @@ const Home = () => {
       </section>
 
       <section>
-        <AppShowcase />
+        <ProductShowcase />
       </section>
 
       <section>
