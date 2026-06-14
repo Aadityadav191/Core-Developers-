@@ -13,6 +13,7 @@ import Login from "../pages/auth/Login";
 import SignUp from "../pages/auth/SignUp";
 import Career from "../pages/Career";
 import Pricing from "../pages/Pricing";
+import NotFound from "../pages/NotFound";
 export default function AppRouter() {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ export default function AppRouter() {
           <Route path="tech-stack" element={<TechStack />} />
           <Route path="pricing" element={<Pricing />} />
           <Route path="career" element={<Career />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="/auth" element={<AuthLayout />}>
           <Route path="login" element={<Login />} />
