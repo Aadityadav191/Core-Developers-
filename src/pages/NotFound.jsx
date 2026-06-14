@@ -57,7 +57,7 @@ export default function NotFound() {
         </div>
 
         {/* Helpful Links Section */}
-        <div className="mt-16 border-t border-gray-100 pt-10">
+        <div className="mt-16 border-t border-[#015aae] pt-10">
           <p className="text-sm text-gray-500 font-medium mb-4">
             Try checking these out instead:
           </p>
