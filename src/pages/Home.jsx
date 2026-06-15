@@ -11,6 +11,7 @@ import {
 import Testimonials from "../components/Testimonials";
 import { Link } from "react-router-dom";
 import ProductShowcase from "../components/ProductShowcase";
+import CompanyMarquee from "../components/CompanyMarquee";
 
 // Animation Helper: Fades in content as you scroll
 const ScrollReveal = ({ children }) => (
@@ -235,6 +236,11 @@ const Home = () => {
 
       <section>
         <ProductShowcase />
+      </section>
+
+
+      <section>
+        <CompanyMarquee/>
       </section>
 
       <section>

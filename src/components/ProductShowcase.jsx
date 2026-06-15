@@ -25,7 +25,7 @@ const ProductShowcase = () => {
   ];
 
   return (
-    <section className="bg-[#031c36] text-white py-24 px-6 relative overflow-hidden">
+    <section className="bg-[#031c36] text-white py-2 px-6 relative overflow-hidden">
       {/* Background Lighting Elements */}
       <div className="absolute top-1/3 left-[-10%] w-[50%] h-[50%] rounded-full bg-[#015aae] blur-[150px] opacity-10 pointer-events-none"></div>
       <div className="absolute bottom-0 right-[-10%] w-[40%] h-[40%] rounded-full bg-[#de8f32] blur-[150px] opacity-5 pointer-events-none"></div>

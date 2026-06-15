@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from 'framer-motion';
-import { MapPin, Send, MessageSquare, Globe } from 'lucide-react';
+import { MapPin, Send, MessageSquare, Globe, Phone } from 'lucide-react';
 import { Helmet } from "react-helmet";
 import emailjs from '@emailjs/browser'; // 1. Imported EmailJS
 
@@ -42,6 +42,12 @@ const Contact = () => {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };
+  const stats = [
+    { value: "24/7", label: "WhatsApp Support" },
+    { value: "1 hr", label: "Response Time" },
+    { value: "100%", label: "Support Rate" },
+    { value: "6 days", label: "Business Week" },
+  ];
 
   return (
    <>
@@ -51,7 +57,8 @@ const Contact = () => {
       <meta name="keywords" content="Core Developers, Contact, Web Development, Inquiries, Support" />
       <meta name="author" content="Core Developers Team" />
     </Helmet>
-     <div className="min-h-screen bg-[#031c36] text-white pt-32 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36]">
+
+     <div className="min-h-screen bg-[#031c36] text-white pt-32 pb-20 selection:bg-[#de8f32] selection:text-[#031c36]">
       {/* Background Accents */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[10%] right-[-5%] w-[30%] h-[30%] rounded-full bg-[#015aae] blur-[120px] opacity-20"></div>
@@ -64,7 +71,7 @@ const Contact = () => {
           initial="hidden" 
           animate="visible" 
           variants={fadeInUp} 
-          className="text-center mb-20"
+          className="text-center"
         >
           <h2 className="text-[#de8f32] font-bold tracking-[0.3em] uppercase text-sm mb-4">Get In Touch</h2>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6">Let's Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#015aae] to-[#de8f32]">Next Big Idea</span></h1>
@@ -72,6 +79,46 @@ const Contact = () => {
             Have a question or a project in mind? Reach out to our core team and let's start engineering your digital future.
           </p>
         </motion.div>
+
+         <div className=" flex justify-center items-center max-w-xl mx-auto px-10 mb-20">
+          <button className="mx-auto mt-10  border-2 hover:bg-gray-100 text-[#606b7a] px-3 py-2 rounded-xl  text-md  transition-all active:scale-95 flex items-center gap-2">
+             <Send size={15} /> Get Started Today
+          </button>
+
+          <button className="mx-auto mt-10  border-2 hover:bg-gray-100 text-[#606b7a] px-3 py-2 rounded-xl  text-md  transition-all active:scale-95 flex items-center gap-2">
+             <Phone size={15}/>Contact info
+          </button>
+
+          <button className="mx-auto mt-10  border-2 hover:bg-gray-100 text-[#606b7a] px-3 py-2 rounded-xl  text-md  transition-all active:scale-95 flex items-center gap-2">
+            <MapPin size={15}/>Visits Us 
+          </button>
+        </div>
+
+         <section className="max-w-7xl mx-auto px-4 -mt-10 relative  mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {stats.map((stat, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 + 1.2 }}
+              whileHover={{
+                y: -10,
+                boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1)",
+              }}
+              className="bg-[#2c62a7] border-2 border-[#2c62a7] rounded-[20px] p-5 flex flex-col items-center justify-center text-center transition-all"
+            >
+              <h3 className="text-[25px] font-extrabold text-white mb-1 leading-none">
+                {stat.value}
+              </h3>
+              <p className="text-white text-sm  uppercase tracking-wider">
+                {stat.label}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
 
         <div className="grid lg:grid-cols-3 gap-12">
           

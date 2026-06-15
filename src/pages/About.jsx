@@ -4,7 +4,8 @@ import { ShieldCheck, Zap, Cpu } from "lucide-react";
 import Testimonials from "../components/Testimonials";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import {  Terminal, Orbit, Globe2, Layers, CheckCircle2 } from "lucide-react";
+import { Terminal, Orbit, Globe2, Layers, CheckCircle2 } from "lucide-react";
+import CompanyMarquee from "../components/CompanyMarquee";
 const About = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -134,106 +135,107 @@ const About = () => {
             />
           </div>
 
+          <section className=" text-white py-15 px-6 relative overflow-hidden">
+            {/* Structural Tech Grid Layer */}
+            <div className="absolute inset-0 opacity-[0.02] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
 
-        <section className="bg-[#031c36] text-white py-28 px-6 relative overflow-hidden">
-      {/* Structural Tech Grid Layer */}
-      <div className="absolute inset-0 opacity-[0.02] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none"></div>
+            {/* Futuristic Background Glows */}
+            <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-[#015aae]/10 blur-[140px] rounded-full pointer-events-none"></div>
+            <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-[#de8f32]/5 blur-[120px] rounded-full pointer-events-none"></div>
 
-      {/* Futuristic Background Glows */}
-      <div className="absolute top-[20%] right-[-10%] w-[500px] h-[500px] bg-[#015aae]/10 blur-[140px] rounded-full pointer-events-none"></div>
-      <div className="absolute bottom-[-10%] left-[-5%] w-[400px] h-[400px] bg-[#de8f32]/5 blur-[120px] rounded-full pointer-events-none"></div>
+            <div className="max-w-7xl mx-auto relative z-10">
+              {/* --- TOP ROW: SECTION INTRO --- */}
+              <div className="grid lg:grid-cols-12 gap-12 items-start mb-24">
+                <div className="lg:col-span-5 space-y-4">
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#de8f32] text-xs font-bold uppercase tracking-widest">
+                    <Globe2 size={12} /> Who We Are
+                  </div>
+                  <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-none text-white">
+                    The Blueprint of <br />
+                    <span className="text-[#015aae]">Core Innovation</span>
+                  </h2>
+                </div>
 
-      <div className="max-w-7xl mx-auto relative z-10">
-        
-        {/* --- TOP ROW: SECTION INTRO --- */}
-        <div className="grid lg:grid-cols-12 gap-12 items-start mb-24">
-          <div className="lg:col-span-5 space-y-4">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-[#de8f32] text-xs font-bold uppercase tracking-widest">
-              <Globe2 size={12} /> Who We Are
+                <div className="lg:col-span-7 lg:pt-6">
+                  <p className="text-gray-400 text-lg md:text-xl font-normal leading-relaxed max-w-3xl">
+                    At Core Developers, we believe that software shouldn't just
+                    run—it should dominate. Born out of a necessity for flawless
+                    code and unyielding speed, we help modern enterprises and
+                    visionary startups engineer systems that turn abstract ideas
+                    into bulletproof, revenue-driving digital engines.
+                  </p>
+                </div>
+              </div>
+
+              {/* --- MIDDLE ROW: INTERACTIVE VALUE PILLARS --- */}
+              <div className="grid md:grid-cols-3 gap-8 mb-24">
+                {pillars.map((pillar, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    whileHover={{ y: -6 }}
+                    className="p-8 rounded-[2rem] bg-white/[0.01] border border-white/5 hover:border-[#015aae]/30 hover:bg-white/[0.03] transition-all flex flex-col justify-between group"
+                  >
+                    <div>
+                      <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#de8f32] group-hover:bg-[#015aae] group-hover:text-white transition-colors mb-8">
+                        {pillar.icon}
+                      </div>
+                      <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#de8f32] transition-colors">
+                        {pillar.title}
+                      </h3>
+                      <p className="text-sm text-gray-500 leading-relaxed">
+                        {pillar.desc}
+                      </p>
+                    </div>
+
+                    <div className="mt-8 flex items-center gap-2 text-xs font-black tracking-wider uppercase opacity-0 group-hover:opacity-100 text-[#015aae] transition-all">
+                      <CheckCircle2 size={14} className="text-[#de8f32]" /> Core
+                      Verified
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* --- BOTTOM ROW: METRICS GRID & AGENT STATEMENT --- */}
+              <div className="grid lg:grid-cols-12 gap-12 items-center pt-12 border-t border-white/5">
+                {/* Engineering Manifesto Statement */}
+                <div className="lg:col-span-6 space-y-4">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gray-500">
+                    <Layers size={14} /> Our Engineering Manifesto
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-bold text-gray-200 leading-snug">
+                    "We measure our success by the absolute simplicity of our
+                    architecture and the unstoppable scalability of your
+                    business."
+                  </h4>
+                </div>
+
+                {/* Core Analytics Showcase */}
+                <div className="lg:col-span-6 grid grid-cols-3 gap-6 w-full">
+                  {stats.map((stat, idx) => (
+                    <div
+                      key={idx}
+                      className="text-center p-6 bg-white/[0.01] border border-white/5 rounded-2xl"
+                    >
+                      <div className="text-2xl md:text-4xl font-black text-[#de8f32] tracking-tight mb-1">
+                        {stat.value}
+                      </div>
+                      <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500">
+                        {stat.label}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black tracking-tight leading-none text-white">
-              The Blueprint of <br />
-              <span className="text-[#015aae]">Core Innovation</span>
-            </h2>
-          </div>
-          
-          <div className="lg:col-span-7 lg:pt-6">
-            <p className="text-gray-400 text-lg md:text-xl font-normal leading-relaxed max-w-3xl">
-              At Core Developers, we believe that software shouldn't just run—it should dominate. 
-              Born out of a necessity for flawless code and unyielding speed, we help modern enterprises 
-              and visionary startups engineer systems that turn abstract ideas into bulletproof, 
-              revenue-driving digital engines.
-            </p>
-          </div>
-        </div>
+          </section>
 
-        {/* --- MIDDLE ROW: INTERACTIVE VALUE PILLARS --- */}
-        <div className="grid md:grid-cols-3 gap-8 mb-24">
-          {pillars.map((pillar, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -6 }}
-              className="p-8 rounded-[2rem] bg-white/[0.01] border border-white/5 hover:border-[#015aae]/30 hover:bg-white/[0.03] transition-all flex flex-col justify-between group"
-            >
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#de8f32] group-hover:bg-[#015aae] group-hover:text-white transition-colors mb-8">
-                  {pillar.icon}
-                </div>
-                <h3 className="text-xl font-bold mb-4 text-white group-hover:text-[#de8f32] transition-colors">
-                  {pillar.title}
-                </h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
-                  {pillar.desc}
-                </p>
-              </div>
-              
-              <div className="mt-8 flex items-center gap-2 text-xs font-black tracking-wider uppercase opacity-0 group-hover:opacity-100 text-[#015aae] transition-all">
-                <CheckCircle2 size={14} className="text-[#de8f32]" /> Core Verified
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* --- BOTTOM ROW: METRICS GRID & AGENT STATEMENT --- */}
-        <div className="grid lg:grid-cols-12 gap-12 items-center pt-12 border-t border-white/5">
-          {/* Engineering Manifesto Statement */}
-          <div className="lg:col-span-6 space-y-4">
-            <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-gray-500">
-              <Layers size={14} /> Our Engineering Manifesto
-            </div>
-            <h4 className="text-xl md:text-2xl font-bold text-gray-200 leading-snug">
-              "We measure our success by the absolute simplicity of our architecture and the unstoppable scalability of your business."
-            </h4>
-          </div>
-
-          {/* Core Analytics Showcase */}
-          <div className="lg:col-span-6 grid grid-cols-3 gap-6 w-full">
-            {stats.map((stat, idx) => (
-              <div key={idx} className="text-center p-6 bg-white/[0.01] border border-white/5 rounded-2xl">
-                <div className="text-2xl md:text-4xl font-black text-[#de8f32] tracking-tight mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-[10px] md:text-xs font-bold uppercase tracking-widest text-gray-500">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-
-
-
-
-
-
+          <section>
+            <CompanyMarquee />
+          </section>
 
           <section>
             <Testimonials />
@@ -248,13 +250,16 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6">
               Ready to see the "Core" difference?
             </h2>
-            <Link to="/team" className="bg-[#de8f32] text-[#031c36] px-10 py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(222,143,50,0.4)] transition-all">
+            <Link
+              to="/team"
+              className="bg-[#de8f32] text-[#031c36] px-10 py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(222,143,50,0.4)] transition-all"
+            >
               Meet the Team
             </Link>
           </motion.div>
         </div>
       </div>
-    </> 
+    </>
   );
 };
 
