@@ -1,7 +1,7 @@
 // import React from 'react';
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
-import { testimonials } from '../data/Testimonal';
+import { testimonials } from '../../data/Testimonal';
 
 const Testimonials = () => {
   return (

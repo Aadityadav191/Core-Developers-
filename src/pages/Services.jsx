@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-import ProductShowcase from "../components/ProductShowcase"
+import ProductShowcase from "../components/UI/ProductShowcase"
 
 const Services = () => {
 

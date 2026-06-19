@@ -5,7 +5,6 @@ import "./App.css";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    // Hide loader after 1.5 seconds
     setTimeout(() => setIsLoading(false), 1500);
   }, []);
 

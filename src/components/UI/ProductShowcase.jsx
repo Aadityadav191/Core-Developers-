@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { Smartphone, Shield, Zap, Layers, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 // Importing the assets using your paths
-import WebAppShow1 from "../assets/WebAppShow1.png";
-import WebAppShow2 from "../assets/WebAppShow2.png";
+import WebAppShow1 from "../../assets/WebAppShow1.png";
+import WebAppShow2 from "../../assets/WebAppShow2.png";
 
 const ProductShowcase = () => {
   const features = [

@@ -6,7 +6,7 @@ import {
   ArrowUpRight,
   Code2,
 } from "lucide-react";
-import CareerForm from '../components/CareerForm';
+import CareerForm from '../components/UI/CareerForm';
 import {openRoles, perks} from "../data/CareerData"
 
 const Career = () => {

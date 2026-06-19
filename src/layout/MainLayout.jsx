@@ -1,10 +1,10 @@
 import { useEffect ,useState} from 'react';
 
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Whatsup from "../components/Whatsup";
-import CookieConsent from "../components/CookieConsent";
+import Navbar from "../components/common/Navbar";
+import Footer from "../components/common/Footer";
+import Whatsup from "../components/common/Whatsup";
+import CookieConsent from "../components/common/CookieConsent";
 
 export default function Mainlayout() {
        const [showCookie, setShowCookie] = useState(false);

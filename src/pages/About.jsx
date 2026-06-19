@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { ShieldCheck, Zap, Cpu } from "lucide-react";
-import Testimonials from "../components/Testimonials";
+import Testimonials from "../components/UI/Testimonials";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Globe2, Layers, CheckCircle2 } from "lucide-react";
-import CompanyMarquee from "../components/CompanyMarquee";
+import CompanyMarquee from "../components/UI/CompanyMarquee";
 import {stats,pillars} from "../data/AboutData"
 
 const About = () => {

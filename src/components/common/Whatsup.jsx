@@ -1,5 +1,5 @@
 // import { useState, useEffect } from "react";
-import whatsupIcon from "../assets/whatsup.png";
+import whatsupIcon from "../../assets/whatsup.png";
 
 const Whatsup = () => {
   return (
