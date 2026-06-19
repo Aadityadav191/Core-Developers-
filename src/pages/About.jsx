@@ -4,36 +4,14 @@ import { ShieldCheck, Zap, Cpu } from "lucide-react";
 import Testimonials from "../components/Testimonials";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import { Terminal, Orbit, Globe2, Layers, CheckCircle2 } from "lucide-react";
+import { Globe2, Layers, CheckCircle2 } from "lucide-react";
 import CompanyMarquee from "../components/CompanyMarquee";
+import {stats,pillars} from "../data/AboutData"
+
 const About = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
-
-  const stats = [
-    { value: "99.9%", label: "Uptime Achieved" },
-    { value: "50M+", label: "API Requests Processed" },
-    { value: "4x", label: "Faster Deployment Cycles" },
-  ];
-
-  const pillars = [
-    {
-      icon: <Terminal size={22} />,
-      title: "Clean-Code Architecture",
-      desc: "We don't just build to launch; we build to scale. Every codebase is treated as a piece of technical architecture—optimized for speed, security, and effortless maintenance.",
-    },
-    {
-      icon: <Cpu size={22} />,
-      title: "Calculated Innovation",
-      desc: "Innovation isn't about chasing trends; it's about shifting paradigms. We integrate advanced paradigms like serverless computing and edge analytics where they count.",
-    },
-    {
-      icon: <Orbit size={22} />,
-      title: "The Ecosystem Approach",
-      desc: "No platform is an island. We design unified software ecosystems where your web, mobile apps, and cloud networks talk to each other in perfect synchronicity.",
-    },
-  ];
 
   return (
     <>
@@ -245,7 +223,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="mt-32 p-12 rounded-3xl bg-gradient-to-r from-[#015aae] to-[#031c36] border border-white/10 text-center"
+            className="mt-32 p-12 rounded-3xl bg-linear-to-r from-[#015aae] to-[#031c36] border border-white/10 text-center"
           >
             <h2 className="text-3xl font-bold mb-6">
               Ready to see the "Core" difference?
