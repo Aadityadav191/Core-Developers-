@@ -255,12 +255,12 @@ const Contact = () => {
               <ContactCard
                 icon={<MessageSquare className="text-[#de8f32]" />}
                 title="Chat with us"
-                detail="info.coredevelopers@gmail.com"
+                detail="+977 9821747900"
                 sub="Online 24/7"
               />
               <ContactCard
                 icon={<MapPin className="text-[#015aae]" />}
-                title="Visit our Lab"
+                title="Visit our Office "
                 detail="New Baneshwor ,Kathmandu, Nepal"
                 sub="Monday - Friday, 9am - 6pm"
               />
@@ -270,20 +270,6 @@ const Contact = () => {
                 detail="info.coredevelopers@gmail.com"
                 sub="For urgent technical help"
               />
-
-              {/* Quick Status Box */}
-              <div className="bg-gradient-to-br from-[#015aae] to-[#031c36] p-8 rounded-[2rem] border border-white/10">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-xs font-bold uppercase tracking-tighter">
-                    System Status: All Green
-                  </span>
-                </div>
-                <p className="text-sm text-blue-100/60 leading-relaxed">
-                  Our developers are currently active and responding to
-                  inquiries within **2 hours**.
-                </p>
-              </div>
             </motion.div>
           </div>
         </div>
@@ -294,6 +280,7 @@ const Contact = () => {
 
 // Sub-component for Info Cards
 const ContactCard = ({ icon, title, detail, sub }) => (
+  <>
   <div className="bg-white/5 border border-white/10 p-8 rounded-[2rem] hover:border-[#de8f32]/50 transition-all group">
     <div className="bg-[#031c36] w-12 h-12 rounded-xl flex items-center justify-center mb-6 border border-white/10 group-hover:scale-110 transition-transform">
       {icon}
@@ -304,6 +291,7 @@ const ContactCard = ({ icon, title, detail, sub }) => (
     <p className="text-xl font-bold mb-1">{detail}</p>
     <p className="text-xs text-gray-400">{sub}</p>
   </div>
+  </>
 );
 
 export default Contact;
