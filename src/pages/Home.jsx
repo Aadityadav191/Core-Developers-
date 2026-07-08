@@ -253,8 +253,8 @@ const Home = () => {
           <div className="max-w-5xl mx-auto rounded-[3rem] bg-linear-to-br from-[#015aae] to-[#031c36] p-12 md:p-20 text-center border border-white/10 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#de8f32] blur-[120px] opacity-20 -mr-32 -mt-32"></div>
             <h2 className="text-4xl md:text-6xl font-bold mb-8">
-              Have a big idea? <br /> Let's build the{" "}
-              <span className="text-[#de8f32]">Core</span> of it.
+              Launch Your Dream Company <br />
+              <span className="text-[#de8f32]">Website{" "}</span>Today
             </h2>
             <p className="text-xl text-blue-100/70 mb-10 max-w-2xl mx-auto">
               Our consultation is free. Our strategy is priceless. Join the 50+
