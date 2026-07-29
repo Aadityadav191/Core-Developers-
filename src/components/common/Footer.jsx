@@ -57,7 +57,7 @@ const Footer = () => {
         href: "/services",
       },
       {
-        name: "contact",
+        name: "Contact Us",
         href: "/contact",
       },
       {
@@ -79,13 +79,13 @@ const Footer = () => {
         name: "IT Consulting",
       },
     ],
-    Support: [
+    Legal: [
       {
         name: "Help Center",
       },
 
       {
-        name: "Contact Us",
+        name: "Cookie Policy",
       },
       {
         name: "Privacy Policy",

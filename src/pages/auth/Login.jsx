@@ -41,15 +41,15 @@ export default function Login() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="relative z-10"
           >
-            <div className="text-3xl font-black italic tracking-tighter text-white mb-6">
+            <div className="text-2xl font-black italic tracking-tighter text-white mb-4">
               {"<"} CORE{" "}
               <span className="text-[#de8f32]">DEVELOPERS {"/>"}</span>
             </div>
-            <h2 className="text-4xl font-bold text-white leading-tight mb-4">
+            <h2 className="text-3xl font-bold text-white leading-tight mb-3">
               Access the <span className="text-[#de8f32]">Core</span> of your
               projects.
             </h2>
-            <p className="text-blue-100/60 leading-relaxed text-sm">
+            <p className="text-blue-100/60 leading-relaxed text-xs">
               Log in to manage your infrastructure, view project milestones, and
               collaborate with your dedicated engineering team.
             </p>
