@@ -7,14 +7,14 @@ export const members = [
     //   role: "Software Engineer & Co-Founder",
     //   bio: "Visionary behind the Core infrastructure. Expert in scalable systems and cloud-native solutions.",
     //   image: Team1,
-    //   social: {   linkedin: "https://www.linkedin.com/in/aadit-yadav-b17636258/", twitter: "https://twitter.com/aadityadav", github: "https://github.com/aadityadav191", facebook: "https://www.facebook.com/aadityadav" }
+    //   social: {   linkedin: "https://www.linkedin.com/in/aadit-yadav-b17636258/" }
     // },
     {
       name: "Dipak Raj Sharma ",
       role: "Head of Engineering & Co-Founder",
       bio: "Polyglot developer specializing in React ecosystems and performance optimization.",
       image: Team2,
-      social: {   linkedin: "https://www.linkedin.com/in/dipak-sharma-0293961b1/", twitter: "https://twitter.com/dipakrajsharma", github: "https://github.com/dipakrajsharma", facebook: "https://www.facebook.com/dipakrajsharma" }
+      social: {   linkedin: "https://www.linkedin.com/in/dipak-sharma-0293961b1/" }
     },
     {
       name: "Avash Chaudhari",
