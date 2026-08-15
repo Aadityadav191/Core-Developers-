@@ -46,55 +46,76 @@ const Footer = () => {
     },
   ];
 
-  const footerLinks = {
-    Company: [
-      {
-        name: "About Us",
-        href: "/about",
-      },
-      {
-        name: "Services",
-        href: "/services",
-      },
-      {
-        name: "Contact Us",
-        href: "/contact",
-      },
-      {
-        name: "Careers",
-        href: "/career",
-      },
-    ],
-    Services: [
-      {
-        name: "Web Development",
-      },
-      {
-        name: "Mobile Apps",
-      },
-      {
-        name: "UI/UX Design",
-      },
-      {
-        name: "IT Consulting",
-      },
-    ],
-    Legal: [
-      {
-        name: "Help Center",
-      },
+ const footerLinks = {
+  Company: [
+    {
+      id: "company-about",
+      name: "About Us",
+      href: "/about",
+    },
+    {
+      id: "company-services",
+      name: "Services",
+      href: "/services",
+    },
+    {
+      id: "company-contact",
+      name: "Contact Us",
+      href: "/contact",
+    },
+    {
+      id: "company-careers",
+      name: "Careers",
+      href: "/career",
+    },
+  ],
 
-      {
-        name: "Cookie Policy",
-      },
-      {
-        name: "Privacy Policy",
-      },
-      {
-        name: "Terms of Service",
-      },
-    ],
-  };
+  Services: [
+    {
+      id: "service-web",
+      name: "Web Development",
+      href: "/services/web-development",
+    },
+    {
+      id: "service-mobile",
+      name: "Mobile Apps",
+      href: "/services/mobile-apps",
+    },
+    {
+      id: "service-design",
+      name: "Poster & Creative Design",
+      href: "/services/design",
+    },
+    {
+      id: "service-consulting",
+      name: "IT Consulting",
+      href: "/services/consulting",
+    },
+  ],
+
+  Legal: [
+    {
+      id: "legal-help",
+      name: "Help Center",
+      href: "/help",
+    },
+    {
+      id: "legal-cookie",
+      name: "Cookie Policy",
+      href: "/cookie-policy",
+    },
+    {
+      id: "legal-privacy",
+      name: "Privacy Policy",
+      href: "/privacy",
+    },
+    {
+      id: "legal-terms",
+      name: "Terms of Service",
+      href: "/terms",
+    },
+  ],
+};
 
   return (
     <footer
@@ -154,7 +175,7 @@ const Footer = () => {
                 </h4>
                 <ul className="space-y-4">
                   {links.map((link) => (
-                    <li key={link}>
+                    <li key={link.id}>
                       <Link
                         to={link.href}
                         className="text-gray-500 text-sm hover:text-[#de8f32] transition-colors flex items-center group"

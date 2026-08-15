@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Code2, Globe, Cpu, Rocket, Terminal, Layers } from "lucide-react";
 import { Helmet } from "react-helmet";
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { members } from "../data/TeamData";
 
@@ -17,7 +17,7 @@ export default function Team() {
         <title>Core Developers - Team</title>
         <meta
           name="description"
-          content="Meet the core team of engineers and designers behind Core Developers. Learn about their expertise in scalable systems, React ecosystems, UI/UX design, and DevOps automation."
+          content="Meet the core team of engineers and designers behind Core Developers. Learn about their expertise in scalable systems, React ecosystems, Poster & Creative Design, and DevOps automation."
         />
       </Helmet>
       <div className="min-h-screen bg-[#031c36] text-white pt-20 pb-20 px-6 selection:bg-[#de8f32] selection:text-[#031c36] overflow-x-hidden">
@@ -102,22 +102,10 @@ export default function Team() {
                         <FaLinkedin />
                       </a>
                       <a
-                        href={member.social.twitter}
-                        className="text-gray-500 hover:text-[#de8f32] transition-all transform hover:-translate-y-1"
-                      >
-                        <FaTwitter />
-                      </a>
-                      <a
                         href={member.social.github}
                         className="text-gray-500 hover:text-[#de8f32] transition-all transform hover:-translate-y-1"
                       >
                         <FaGithub />
-                      </a>
-                      <a
-                        href={member.social.facebook}
-                        className="text-gray-500 hover:text-[#de8f32] transition-all transform hover:-translate-y-1"
-                      >
-                        <FaFacebook />
                       </a>
                     </div>
                   </div>

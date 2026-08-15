@@ -91,7 +91,7 @@ useEffect(() => {
           />
           <ServiceBlock 
             icon={<Layers size={32} />} 
-            title="UI/UX Design" 
+            title="Poster & Creative Design " 
             desc="Clean, modern, and high-converting interface designs that make your product stand out."
             tags={["Figma", "Prototyping", "Branding"]}
             accent="#de8f32"
@@ -110,7 +110,7 @@ useEffect(() => {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="mt-32 p-12 rounded-[3rem] bg-gradient-to-br from-[#042545] to-[#031c36] border border-white/10 text-center relative overflow-hidden"
+          className="mt-32 p-12 rounded-[3rem] bg-linear-to-br from-[#042545] to-[#031c36] border border-white/10 text-center relative overflow-hidden"
         >
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#015aae] blur-[120px] opacity-20 -mr-20 -mt-20"></div>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Need a custom solution?</h2>
@@ -136,13 +136,13 @@ useEffect(() => {
 const ServiceBlock = ({ icon, title, desc, tags, accent }) => (
   <motion.div 
     whileHover={{ y: -10 }}
-    className="p-8 rounded-[2rem] bg-white/5 border border-white/10 hover:border-white/20 transition-all flex flex-col h-full group"
+    className="p-8 rounded-4xl bg-white/5 border border-white/10 hover:border-white/20 transition-all flex flex-col h-full group"
   >
     <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 border border-white/10 transition-all group-hover:shadow-[0_0_30px_rgba(1,90,174,0.2)]`} style={{ color: accent }}>
       {icon}
     </div>
     <h3 className="text-2xl font-bold mb-4">{title}</h3>
-    <p className="text-gray-400 text-sm leading-relaxed mb-8 flex-grow">
+    <p className="text-gray-400 text-sm leading-relaxed mb-8 grow">
       {desc}
     </p>
     <div className="flex flex-wrap gap-2 mb-6">

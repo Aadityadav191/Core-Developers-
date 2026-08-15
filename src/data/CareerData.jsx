@@ -13,7 +13,7 @@ export const openRoles = [
       stack: ["React", "Node.js", "AWS"],
     },
     {
-      title: "UI/UX Designer",
+      title: "Poster & Creative Design Specialist",
       type: "Contract",
       location: "Remote",
       stack: ["Figma", "Prototyping", "Branding"],

@@ -69,7 +69,7 @@ const CareerForm = ({  onClose }) => {
               <input 
                 type="text" 
                 placeholder="John Doe"
-                className="w-full bg-white/[0.02] border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all"
+                className="w-full bg-white/2 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all"
               />
             </div>
             <div className="space-y-2">
@@ -79,7 +79,7 @@ const CareerForm = ({  onClose }) => {
               <input 
                 type="email" 
                 placeholder="john@example.com"
-                className="w-full bg-white/[0.02] border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all"
+                className="w-full bg-white/2 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all"
               />
             </div>
           </div>
@@ -90,11 +90,11 @@ const CareerForm = ({  onClose }) => {
               <label className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#de8f32]">
                 <Briefcase size={14} /> Applying For
               </label>
-              <select className="w-full bg-white/[0.02] border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all appearance-none">
+              <select className="w-full bg-white/2 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all appearance-none">
                 <option className="bg-[#031c36]">Frontend Developer</option>
                 <option className="bg-[#031c36]">Backend Engineer</option>
                 <option className="bg-[#031c36]">Full Stack Developer</option>
-                <option className="bg-[#031c36]">UI/UX Designer</option>
+                <option className="bg-[#031c36]">Poster & Creative Design Specialist</option>
                 <option className="bg-[#031c36]">Mobile App Developer</option>
               </select>
             </div>
@@ -105,7 +105,7 @@ const CareerForm = ({  onClose }) => {
               <input 
                 type="url" 
                 placeholder="https://"
-                className="w-full bg-white/[0.02] border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all"
+                className="w-full bg-white/2 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all"
               />
             </div>
           </div>
@@ -117,7 +117,7 @@ const CareerForm = ({  onClose }) => {
             </label>
             <div 
               className={`relative border-2 border-dashed rounded-2xl p-6 transition-all flex flex-col items-center justify-center text-center ${
-                dragActive ? "border-[#de8f32] bg-[#de8f32]/5" : "border-white/10 bg-white/[0.02]"
+                dragActive ? "border-[#de8f32] bg-[#de8f32]/5" : "border-white/10 bg-white/2"
               }`}
               onDragEnter={handleDrag}
               onDragLeave={handleDrag}
@@ -146,7 +146,7 @@ const CareerForm = ({  onClose }) => {
             <textarea 
               rows="3"
               placeholder="Tell us about your superpower..."
-              className="w-full bg-white/[0.02] border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all resize-none"
+              className="w-full bg-white/2 border border-white/10 rounded-xl px-5 py-3.5 text-white focus:outline-none focus:border-[#015aae] transition-all resize-none"
             ></textarea>
           </div>
 

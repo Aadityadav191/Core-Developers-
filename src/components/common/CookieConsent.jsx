@@ -30,7 +30,7 @@ export default function CookieConsent() {
           animate={{ y: 0, opacity: 1 }}   
           exit={{ y: 100, opacity: 0 }}    
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="fixed bottom-0 left-0 right-0 z-[100] bg-gradient-to-r from-[#0157a8] to-[#013565] text-white p-6 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] flex flex-col md:flex-row items-center justify-between border-t border-white/10 "
+          className="fixed bottom-0 left-0 right-0 z-100 bg-linear-to-r from-[#0157a8] to-[#013565] text-white p-6 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] flex flex-col md:flex-row items-center justify-between border-t border-white/10 "
         >
           <div className="flex items-center gap-4 mb-4 md:mb-0 md:mr-8">
             <div className="hidden md:block bg-white/20 p-2 rounded-full">

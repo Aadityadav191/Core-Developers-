@@ -1,4 +1,4 @@
-import { useEffect ,useState} from 'react';
+import { useEffect, useState } from "react";
 
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/common/Navbar";
@@ -7,18 +7,18 @@ import Whatsup from "../components/common/Whatsup";
 import CookieConsent from "../components/common/CookieConsent";
 
 export default function Mainlayout() {
-       const [showCookie, setShowCookie] = useState(false);
-    useEffect(() => {
-      // Show cookie after 5 seconds
-       setTimeout(() => setShowCookie(true), 5000);
-    }, []);
+  const [showCookie, setShowCookie] = useState(false);
+  useEffect(() => {
+    // Show cookie after 5 seconds
+    setTimeout(() => setShowCookie(true), 5000);
+  }, []);
 
   return (
     <>
       <Navbar />
       <Whatsup />
       <Outlet />
-       {showCookie && <CookieConsent />}
+      {showCookie && <CookieConsent />}
       <Footer />
     </>
   );

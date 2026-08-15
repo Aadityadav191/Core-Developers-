@@ -1,14 +1,14 @@
-// import Team1 from '../assets/Team1.jpeg';
+import Team1 from '../assets/Team1.jpeg';
 import Team2 from '../assets/Team2.jpeg';
 
 export const members = [
-    // {
-    //   name: "Aadit Yadav ",
-    //   role: "Software Engineer & Co-Founder",
-    //   bio: "Visionary behind the Core infrastructure. Expert in scalable systems and cloud-native solutions.",
-    //   image: Team1,
-    //   social: {   linkedin: "https://www.linkedin.com/in/aadit-yadav-b17636258/" }
-    // },
+    {
+      name: "Aadit Yadav ",
+      role: "Software Engineer & Co-Founder",
+      bio: "Visionary behind the Core infrastructure. Expert in scalable systems and cloud-native solutions.",
+      image: Team1,
+      social: {   linkedin: "https://www.linkedin.com/in/aadit-yadav-b17636258/" }
+    },
     {
       name: "Dipak Raj Sharma ",
       role: "Head of Engineering & Co-Founder",
