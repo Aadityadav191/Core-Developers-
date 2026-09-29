@@ -6,7 +6,8 @@ import {
   ShieldCheck, 
   Cloud, 
   Layers, 
-  Database
+  Database,
+  GraduationCap
 } from 'lucide-react';
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
@@ -96,6 +97,14 @@ useEffect(() => {
             tags={["Figma", "Prototyping", "Branding"]}
             accent="#de8f32"
           />
+          <ServiceBlock 
+    icon={<GraduationCap size={32} />} 
+    title="IT & Technology Training" 
+    desc="Practical training sessions in software development, IT, emerging technologies, and GIS tools for students and professionals."
+    tags={["Software Development", "IT & Technology", "GIS"]}
+    accent="#015aae"
+  />
+          
         </div>
         
 
