@@ -43,18 +43,7 @@ export default function Navbar() {
               About Us
             </NavLink>
 
-            <NavLink
-              to="/team"
-              className={({ isActive }) =>
-                `rounded-lg px-3 py-1 transition ${
-                  isActive
-                    ? "text-[#dc8e34] font-semibold"
-                    : "text-[#ffffff] hover:text-[#dc8e34]"
-                }`
-              }
-            >
-              Our Team
-            </NavLink>
+          
 
             <NavLink
               to="/Services"
@@ -93,6 +82,19 @@ export default function Navbar() {
               }
             >
               Pricing
+            </NavLink>
+
+              <NavLink
+              to="/team"
+              className={({ isActive }) =>
+                `rounded-lg px-3 py-1 transition ${
+                  isActive
+                    ? "text-[#dc8e34] font-semibold"
+                    : "text-[#ffffff] hover:text-[#dc8e34]"
+                }`
+              }
+            >
+              Our Team
             </NavLink>
 
             <NavLink
