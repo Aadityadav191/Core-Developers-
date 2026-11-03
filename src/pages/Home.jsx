@@ -88,17 +88,20 @@ const Home = () => {
             <motion.div
               variants={fadeInUp}
               className="pt-4 flex flex-wrap gap-4"
-            >
-              <button className="group flex items-center gap-2 bg-[#de8f32] text-[#020b14] px-7 py-3.5 rounded-xl font-semibold hover:bg-[#f09f3c] transition-all duration-200 shadow-lg shadow-[#de8f32]/10 hover:shadow-[#de8f32]/20">
+            > <Link to="/contact">
+              <button className="group flex items-center gap-2 bg-[#de8f32] text-[#020b14] px-7 py-3.5 rounded-xl font-semibold hover:bg-[#f09f3c] transition-all duration-200 shadow-lg shadow-[#de8f32]/10 hover:shadow-[#de8f32]/20 cursor-pointer">
                 Start a Project
                 <ChevronRight
                   size={18}
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </button>
-              <button className="flex items-center gap-2 bg-white/5 border border-white/10 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-white/10 hover:border-white/20 transition-all duration-200 backdrop-blur-sm">
+              </Link>
+              <Link to="/Services">
+              <button className="flex items-center gap-2 bg-white/5 border border-white/10 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-white/10 hover:border-white/20 transition-all duration-200 backdrop-blur-sm cursor-pointer">
                 View Architecture
               </button>
+              </Link>
             </motion.div>
           </motion.div>
 

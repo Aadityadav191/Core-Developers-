@@ -10,7 +10,7 @@ const Whatsup = () => {
           w-14 h-14 rounded-1xl overflow-hidden shadow-lg
           focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 
           transition-transform transform hover:scale-110
-          animate-bounce-slow
+          animate-bounce-slow cursor-pointer
         `}
         onClick={() => window.open("https://wa.me/9821747900", "_blank")}
       >

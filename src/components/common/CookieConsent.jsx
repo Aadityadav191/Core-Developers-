@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion"; // Import these
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
@@ -26,26 +26,26 @@ export default function CookieConsent() {
     <AnimatePresence>
       {visible && (
         <motion.div
-          initial={{ y: 100, opacity: 0 }} 
-          animate={{ y: 0, opacity: 1 }}   
-          exit={{ y: 100, opacity: 0 }}    
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="fixed bottom-0 left-0 right-0 z-100 bg-linear-to-r from-[#0157a8] to-[#013565] text-white p-6 shadow-[0_-10px_40px_rgba(0,0,0,0.2)] flex flex-col md:flex-row items-center justify-between border-t border-white/10 "
+          initial={{ y: 50, opacity: 0, scale: 0.95 }} 
+          animate={{ y: 0, opacity: 1, scale: 1 }}   
+          exit={{ y: 50, opacity: 0, scale: 0.95 }}    
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          className="fixed bottom-4 left-4 right-4 md:left-6 md:right-auto md:max-w-xl z-50 bg-linear-to-r from-[#0157a8b6] to-[#013565] text-white p-4 sm:p-5 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4 rounded-2xl border border-white/15"
         >
-          <div className="flex items-center gap-4 mb-4 md:mb-0 md:mr-8">
-            <div className="hidden md:block bg-white/20 p-2 rounded-full">
+          <div className="flex items-center gap-3">
+            <div className="hidden sm:block bg-white/20 p-2 rounded-xl text-lg">
                🍪
             </div>
-            <p className="text-sm text-blue-50 leading-relaxed max-w-2xl">
+            <p className="text-xs sm:text-sm text-blue-50 leading-relaxed">
               We use cookies to enhance your experience. By continuing to visit this
               site you agree to our use of cookies.
             </p>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-4 shrink-0 w-full sm:w-auto justify-end">
             <button
               onClick={declineCookies}
-              className="text-sm font-medium text-white/80 hover:text-white transition-colors"
+              className="text-xs sm:text-sm font-medium text-white/80 hover:text-white transition-colors px-2 py-1.5 cursor-pointer"
             >
               Decline
             </button>
@@ -54,7 +54,7 @@ export default function CookieConsent() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={acceptCookies}
-              className="bg-white text-[#de8f32] px-8 py-2.5 rounded-full font-bold text-sm shadow-lg transition-shadow hover:shadow-green-500/20"
+              className="bg-white text-[#de8f32] px-5 py-2 rounded-xl font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer"
             >
               Accept All
             </motion.button>
