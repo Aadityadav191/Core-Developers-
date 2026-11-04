@@ -66,13 +66,13 @@ const Home = () => {
               </div>
             </motion.div>
 
-            <motion.h1
+              <motion.h1
               variants={fadeInUp}
-              className="text-5xl sm:text-6xl xl:text-7xl font-black tracking-tight text-white leading-[1.05]"
+              className="text-5xl sm:text-6xl font-black tracking-tight text-white leading-[1.05]"
             >
-              We engineer <br />
+              We build websites and mobile apps that{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-400 to-[#de8f32]">
-                high-impact software
+                grow your business
               </span>
             </motion.h1>
 
